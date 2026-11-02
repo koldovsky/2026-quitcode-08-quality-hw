@@ -21,9 +21,8 @@
 - `/api/health`: https://property-workflows-bravo16.vercel.app/api/health
 - Зелений прогін `smoke` на `main`: https://github.com/dmudryk/property-workflows/actions/runs/41469946514
 - `accounts.zip` на SHA: https://github.com/dmudryk/property-workflows/blob/0d0c0dd1f4214d8164dcef0f65e0b1aaf199e549/accounts.zip
-- Ролі тестових акаунтів: адміністратор — pm-admin@example.test; менеджер — pm-manager@example.test; менеджер без
-  жодного запуску (AC-DSYS-04, AC-DSYS-02) — manager.c@example.test; менеджер запуску «Apartment 12, move-in»
-  (AC-DSYS-08) — manager.a@example.test; вендор (зріз 3) — vendor@example.test
+- Ролі тестових акаунтів: адміністратор — pm-admin@example.test; менеджер — pm-manager@example.test; менеджер —
+  manager.a@example.test; менеджер — manager.c@example.test; вендор — vendor@example.test
 - Версія `next`: next@16.4.3
 
 ### Шар якості для 3 AC
