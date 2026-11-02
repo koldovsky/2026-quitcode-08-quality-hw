@@ -6,7 +6,7 @@
 - Команда: property-workflows
 - GitHub-логін: vhrytsyndyshynquitcode
 - Ваше репо: https://github.com/vhrytsyndyshynquitcode/property-workflows
-- SHA: d81decfdeefedefbe1ad89c5502c5da4bbd37380
+- SHA: f8a75b2d1d8ccc970d12525b49cb90e8e249ede9
 - Репо вимог PM: https://github.com/solomchaak/property-workflows-spec
 - Прод-URL: https://property-workflows-one.vercel.app
 
@@ -18,24 +18,24 @@
 
 ### D0 — умова прийняття
 
-- `/api/health`: https://property-workflows-one.vercel.app/api/health — `{"ok":true,"sha":"d81decfdeefedefbe1ad89c5502c5da4bbd37380","env":"production","db":"ok"}` на момент здачі
-- Зелений прогін `smoke` на `main`: https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41431356035 (після розгортання `d81decf`); ручний прогін — https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41412858327
-- `accounts.zip` на SHA: https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/d81decfdeefedefbe1ad89c5502c5da4bbd37380/accounts.zip
+- `/api/health`: https://property-workflows-one.vercel.app/api/health — `{"ok":true,"sha":"f8a75b2d1d8ccc970d12525b49cb90e8e249ede9","env":"production","db":"ok"}` на момент здачі
+- Зелений прогін `smoke` на `main`: https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41442037991 (після розгортання `f8a75b2`); ручний прогін — https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41412858327
+- `accounts.zip` на SHA: https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/accounts.zip
 - Ролі тестових акаунтів: адміністратор — pm-admin@example.test; менеджер — pm-manager@example.test
 - Версія `next`: next@16.4.3
 
 ### Шар якості для 3 AC
 
 - 3 AC: AC-EDITOR-07 (відмова в браузері: заборонена роль), AC-EDITOR-09 (відмова в браузері: не увійшов), AC-EDITOR-19 (стан інтерфейсу: помилка «Enter a template name»)
-- QA proof pack: https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/d81decfdeefedefbe1ad89c5502c5da4bbd37380/docs/qa/proof-pack.md
+- QA proof pack: https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/docs/qa/proof-pack.md
 - Ворота — PR із розбором знахідок (A): https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/32
-- Ворота — зелений прогін `quality` на `main` (A): https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41431301645 (на SHA здачі); перший зелений — https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41413070904
+- Ворота — зелений прогін `quality` на `main` (A): https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41441983659 (на SHA здачі); перший зелений — https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41413070904
 - Ворота — обов'язкові перевірки в `solo-main` (A): «Ворота: fallow audit» і «Покриття: доменна підлога» — з 02.11.2026 (разом зі `spec`, `app`, `conformance`, `db-check`); «Порада: вразливі залежності» — дорадча
 - Якість тестів — PR (B): https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/33
-- Якість тестів — убитий мутант (B): `src/app/templates/actions.ts:46` `if (!name)` → `if (name === null)` (T19) → AC-EDITOR-19 → https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/d81decfdeefedefbe1ad89c5502c5da4bbd37380/tests/templates/editor-actions.test.ts#L66 — на тестах `main` до PR вижив, після — убитий
-- SQL-мутація (B): https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/33 — E19 (`20261020073540_workflow_runs.sql:50`, `length(btrim(name)) > 0` → `length(name) > 0`, AC-EDITOR-19): SURVIVED → KILLED тестом https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/d81decfdeefedefbe1ad89c5502c5da4bbd37380/tests/db/template-editor-oct27.test.ts#L108; E09 (`grant select … to anon`, AC-EDITOR-09): KILLED
-- UAT — специфікації (C): https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/d81decfdeefedefbe1ad89c5502c5da4bbd37380/tests/e2e/templates.spec.ts
-- UAT — звіт на проді (C): https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/d81decfdeefedefbe1ad89c5502c5da4bbd37380/docs/qa/uat/2026-11-02/report.md — 3 AC: PASS (R6)
+- Якість тестів — убитий мутант (B): `src/app/templates/actions.ts:46` `if (!name)` → `if (name === null)` (T19) → AC-EDITOR-19 → https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/tests/templates/editor-actions.test.ts#L66 — на тестах `main` до PR вижив, після — убитий
+- SQL-мутація (B): https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/33 — E19 (`20261020073540_workflow_runs.sql:50`, `length(btrim(name)) > 0` → `length(name) > 0`, AC-EDITOR-19): SURVIVED → KILLED тестом https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/tests/db/template-editor-oct27.test.ts#L108; E09 (`grant select … to anon`, AC-EDITOR-09): KILLED
+- UAT — специфікації (C): https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/tests/e2e/templates.spec.ts
+- UAT — звіт на проді (C): https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/docs/qa/uat/2026-11-02/report.md — 3 AC: PASS (R6)
 - UAT — PR зі звітом і відео (C): https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/36
 - UAT — негативний контроль (C): https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/36 — NC-1 (AC-EDITOR-07, хибний текст у твердженні) → FAIL (R1); NC-2 (AC-EDITOR-07, «уточнений» `ac-text`) → NEEDS-HUMAN (R3)
 - Рядки `docs/conformance.md` (C): AC-EDITOR-07 (реалізовано), AC-EDITOR-09 (реалізовано), AC-EDITOR-19 (реалізовано) — у кожному додано `tests/e2e/templates.spec.ts` (UAT); рядків `відкладено (e2e — WS8)` у матриці не було
@@ -46,4 +46,8 @@
 
 ## Бонус
 
-—
+UAT у CI (`workflow_dispatch`): https://github.com/vhrytsyndyshynquitcode/property-workflows/actions/runs/41441994994 — зелений, 6 з 6 (вхід admin і manager, AC-EDITOR-07, AC-EDITOR-09, AC-EDITOR-19, прибирання), 0 пропущено; артефакт `e2e-41441994994` (звіт Playwright, відео й траси, 23 МБ). Workflow — https://github.com/vhrytsyndyshynquitcode/property-workflows/blob/f8a75b2d1d8ccc970d12525b49cb90e8e249ede9/.github/workflows/e2e.yml (PR https://github.com/vhrytsyndyshynquitcode/property-workflows/pull/42; там же перший зелений прогін на `pull_request`).
+
+Що зроблено: `e2e.yml` з матеріалів курсу без змін — одноразовий Supabase в раннері (`supabase start` з нашими міграціями й `seed.sql`, користувачі з `supabase/demo-users.json` з випадковим паролем на кожен прогін), `npm run build`, ті самі специфікації `tests/e2e/templates.spec.ts`, що й UAT на проді. Хмарних секретів немає зовсім, тож артефакти публічного репо нічого не розкривають, а `@writes`-тести були б безпечні.
+
+Висновок: ті самі 3 AC тепер доводяться на кожному PR і push у `main`, а не лише ручним прогоном на проді. Вердикту агента в CI немає (лише твердження Playwright): він лишається в UAT на проді, бо в CI для нього потрібен токен Claude.
