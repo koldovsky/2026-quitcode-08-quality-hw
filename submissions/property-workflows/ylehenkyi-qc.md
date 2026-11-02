@@ -30,7 +30,7 @@
 - QA proof pack: https://github.com/ylehenkyi-qc/property-workflows/blob/8cc6a6dfdf7cd415f0cd8adbef989fe9dea9ca3b/docs/qa/proof-pack.md
 - Ворота — PR із розбором знахідок (A): https://github.com/ylehenkyi-qc/property-workflows/pull/32
 - Ворота — зелений прогін `quality` на `main` (A): https://github.com/ylehenkyi-qc/property-workflows/actions/runs/41478977459
-- Ворота — обов'язкові перевірки в `solo-main` (A): «Ворота: fallow audit» і «Покриття: доменна підлога» (поруч із `spec`, `app`, `conformance`, `db-check`), додано 02.11.2026
+- Ворота — обов'язкові перевірки в `solo-main` (A): «Ворота: fallow audit» і «Покриття: доменна підлога» (поруч із `spec`, `app`, `conformance`, `db-check`), додано 02.11.2026; опис і дата в proof pack https://github.com/ylehenkyi-qc/property-workflows/blob/8cc6a6dfdf7cd415f0cd8adbef989fe9dea9ca3b/docs/qa/proof-pack.md (розділ A), обов'язковість видно на злитому PR https://github.com/ylehenkyi-qc/property-workflows/pull/42 (усі ці перевірки зелені)
 - Якість тестів — PR (B): https://github.com/ylehenkyi-qc/property-workflows/pull/33
 - Якість тестів — убитий мутант (B): `src/lib/auth/require-role.ts:29` `status: "ok"` → `status: ""` → AC-DSYS-02 → тест https://github.com/ylehenkyi-qc/property-workflows/blob/8cc6a6dfdf7cd415f0cd8adbef989fe9dea9ca3b/src/lib/auth/require-role.test.ts#L52
 - SQL-мутація (B): https://github.com/ylehenkyi-qc/property-workflows/pull/41 (мутанти W1–W3 на політику й grant `template_versions` для AC-EDITOR-07: 3 з 3 KILLED; таблиця в proof pack, розділ B; раніше у https://github.com/ylehenkyi-qc/property-workflows/pull/33 було 6 з 6 для AC-TASK-10, замінений на AC-EDITOR-07, бо AC-TASK-10 зі зрізу 1)
@@ -38,7 +38,7 @@
 - UAT — звіт на проді (C): https://github.com/ylehenkyi-qc/property-workflows/blob/8cc6a6dfdf7cd415f0cd8adbef989fe9dea9ca3b/docs/qa/uat/2026-11-02/report.md
 - UAT — PR зі звітом і відео (C): https://github.com/ylehenkyi-qc/property-workflows/pull/41 (відео вкладенням в описі)
 - UAT — негативний контроль (C): https://github.com/ylehenkyi-qc/property-workflows/pull/34: NC-1 → FAIL (R1), NC-2 → NEEDS-HUMAN (R3)
-- Рядки `docs/conformance.md` (C): AC-DSYS-02 (реалізовано), AC-EDITOR-07 (реалізовано), AC-DSYS-04 (реалізовано)
+- Рядки `docs/conformance.md` (C): AC-DSYS-02 (реалізовано), AC-EDITOR-07 (реалізовано), AC-DSYS-04 (реалізовано): https://github.com/ylehenkyi-qc/property-workflows/blob/8cc6a6dfdf7cd415f0cd8adbef989fe9dea9ca3b/docs/conformance.md
 - Eval рецензента — PR з вадами, не злитий (D): https://github.com/ylehenkyi-qc/property-workflows/pull/38 (перший прогін) і https://github.com/ylehenkyi-qc/property-workflows/pull/40 (чиста копія для повторного прогону); обидва закриті без злиття
 - Eval рецензента — таблиця й ключ (D): https://github.com/ylehenkyi-qc/property-workflows/pull/38#issuecomment-6580600689
 - Eval рецензента — правило й повторний прогін (D): правило https://github.com/ylehenkyi-qc/property-workflows/commit/2ad9cf2e97c628614f6a69810edbd681be41ff9c (PR https://github.com/ylehenkyi-qc/property-workflows/pull/39), повторний прогін https://github.com/ylehenkyi-qc/property-workflows/pull/40#issuecomment-6581854483
