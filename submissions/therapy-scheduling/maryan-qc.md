@@ -21,7 +21,7 @@
 - `/api/health`: https://therapy-scheduling-sigma.vercel.app/api/health
 - Зелений прогін `smoke` на `main`: https://github.com/maryan-qc/therapy-scheduling/actions/runs/41687032800
 - `accounts.zip` на SHA: https://github.com/maryan-qc/therapy-scheduling/blob/d34c516a7cd1b4b1811ecd103928e740415e2ee1/accounts.zip
-- Ролі тестових акаунтів: адміністратор — admin1@example.test, pm-admin@example.test, admin@example.test; планувальник — scheduler1@example.test, scheduler2@example.test, pm-scheduler@example.test; терапевт — therapist1@example.test, therapist2@example.test, pm-therapist@example.test; без ролі — newuser1@example.test. Паролі — лише в `accounts.zip`
+- Ролі тестових акаунтів: адміністратор — admin1@example.test, pm-admin@example.test, admin@example.test; планувальник — scheduler1@example.test, scheduler2@example.test, pm-scheduler@example.test; терапевт — therapist1@example.test, therapist2@example.test, pm-therapist@example.test; без ролі — newuser1@example.test
 - Версія `next`: next@16.4.3
 
 ### Шар якості для 3 AC
