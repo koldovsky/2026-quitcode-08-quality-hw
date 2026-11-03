@@ -42,7 +42,7 @@
 - Eval рецензента — PR з вадами, не злитий (D): https://github.com/lukian-tomochko/leave-portal/pull/40 (закрито без злиття)
 - Eval рецензента — таблиця й ключ (D): https://github.com/lukian-tomochko/leave-portal/pull/40#issuecomment-6598424934
 - Eval рецензента — правило й повторний прогін (D): правило https://github.com/lukian-tomochko/leave-portal/commit/e78a5a79731fe40e3053fbf85cefc99ab0afed23 (PR https://github.com/lukian-tomochko/leave-portal/pull/41); повторний прогін CodeRabbit знайшов пропущену ваду https://github.com/lukian-tomochko/leave-portal/pull/40#issuecomment-6599444888
-- Відхилення від PM (C): не надходило станом на 2026-11-03 (issues «Відхилення від вимог» у репо немає). Виправлення після здачі — коментарем «Виправлено: …» у тому ж issue до кінця Сб 07.11
+- Відхилення від PM (C): не надходило станом на 2026-11-03 (issues «Відхилення від вимог» у репо немає). Виправлення після здачі — коментарем «Виправлено» з посиланням на PR у тому ж issue до кінця Сб 07.11
 
 ## Бонус
 
